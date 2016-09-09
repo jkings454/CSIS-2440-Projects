@@ -1,0 +1,9 @@
+.project-container {
+  padding: 15px 15px 15px 15px;
+  overflow-y: scroll;
+  min-height: 500px;
+  border-style: solid;
+  border-color: #b3b3b3;
+  border-radius: 10px;
+  border-width: 1px;
+}
