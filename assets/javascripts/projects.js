@@ -12,8 +12,7 @@ function showGroups(data){
   })
 }
 function getGroup(group_id){
-  $('#projects').empty();
-  $('#projects').append("<h1>Loading content...</h1>")
+  $('#projects').html("<div class = 'loader'>Loading Content...</div>")
   $.ajax({
     url:"http://www.joshualnichols.com/api/v1/project_groups/" + group_id,
     dataType: 'json',
@@ -21,15 +20,17 @@ function getGroup(group_id){
   })
 }
 function showGroup(data){
-  $('#projects').empty();
   var showString = "";
-  showString += "<h1>" + data.title + "</h1>";
-  showString += "<ul>"
+  showString += "<div class = 'page-header'>";
+  showString += "<h1 class = 'group-header'>" + data.title + "</h1>";
+  showString += "</div>";
   $.each(data.projects, function(i, project){
-    showString += "<li>" + project.name + "</li>";
+    showString += "<div class = 'col-md-6'>"
+    showString += "<h1>" + project.name + "</h1>";
+    showString += "<p>" + project.description + "</p>";
+    showString += "</div>"
   })
-  showString += "</ul>"
-  $('#projects').append(showString);
+  $('#projects').html(showString);
 
 }
 $(document).ready(getGroups());
