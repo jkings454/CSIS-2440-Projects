@@ -26,11 +26,14 @@ function showGroup(data){
   showString += "</div>";
   $.each(data.projects, function(i, project){
     showString += "<div class = 'col-md-6'>"
-    showString += "<h1>" + project.name + "</h1>";
+    showString += "<article>"
+    showString += "<a href = '" + project.link + "' target = '_blank'><h1>" + project.name + "</h1></a>";
     showString += "<p>" + project.description + "</p>";
+    showString += "</article>"
     showString += "</div>"
   })
   $('#projects').html(showString);
 
 }
+
 $(document).ready(getGroups());
