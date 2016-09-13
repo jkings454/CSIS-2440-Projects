@@ -11,6 +11,18 @@
 .group-header {
   font-size: 5em;
 }
+.align-center {
+  text-align: center;
+}
+#aspiration {
+  max-height: 200px;
+  max-width: 300px;
+  object-fit: none;
+  object-position:bottom;
+  margin: 20px 50px 20px 20px;
+  box-shadow: 10px 20px 10px #666666
+}
+
 /* Special thanks to http://projects.lukehaas.me/css-loaders/ for the wonderful css spinners! */
 .loader:before,
 .loader:after,
