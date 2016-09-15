@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Map of Utah</title>
+      <link rel ='stylesheet' type ='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+      <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+  </head>
+  <body>
+  <div class='container'>
+    <div class = "page-header">
+      <h1>Utah Map</h1>
+    </div>
+    <h4 class = "text-muted">Click on a national park to learn more!</h4>
+    <div class = "col-md-4">
+      <img src = "assets/images/utah-map.jpg" usemap="#utah">
+      <map name="utah">
+        <area alt = "arches national park"
+        href="https://www.nps.gov/arch/index.htm" target="_blank" shape="poly" coords="300,270,283,282,309,298,316,280"/>
+
+        <area alt = "canyonlands national park"
+        href="https://www.nps.gov/cany/index.htm" target="_blank" shape="circle" coords="273, 327, 8"/>
+
+        <area alt = "zions national park" href="https://www.nps.gov/zion/index.htm" target="_blank"
+        shape="poly" coords="93,394,61,396,66,424,91,421"/>
+
+        <area alt = "capitol reef national park" target="_blank"
+        href = "https://www.nps.gov/care/index.htm" shape = "poly" coords="188,329,217,320,190,297"/>
+
+        <area alt = "bryce canyon national park" href = "https://www.nps.gov/brca/index.htm"
+        target="_blank" shape = "rect" coords="121,385,147,362"/>
+
+        <area href="http://www.themostamazingwebsiteontheinternet.com/"
+        target="_blank" shape="rect" coords="26,185" />
+      </map>
+    </div>
+    <div class = "col-md-8">
+      <h2>Utah's national parks.</h2>
+      <p>Utah has some great national parks! In fact, Utah has more national parks than any other state in the United States! If you'd like
+        to learn more about Utah's national parks, try to find the following in the map on the right:</p>
+        <ul>
+          <li>Zion's National Park</li>
+          <li>Bryce Canyon National Park</li>
+          <li>Arches National Park</li>
+          <li>Capitol Reef National Park</li>
+          <li>Canyonlands National Park</li>
+        </ul>
+        <p>If you'd like to learn more about National Parks in general, click <a href= "https://www.nps.gov/index.htm">here.</a></p>
+        <a href="/" class = "btn btn-default pull-right">Go Back</a>
+    </div>
+  </div>
+  </body>
+</html>
