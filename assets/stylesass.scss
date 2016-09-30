@@ -1,0 +1,82 @@
+$red: #8A0917;
+$blue : #ACCFCC;
+$gray : #B8AE9C;
+$dark-gray : #595241;
+
+@mixin box($width, $height, $background){
+  width: $width;
+  height: $height;
+  background: $background;
+}
+
+@mixin absolute-position($top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: $dark-gray;
+}
+
+.big-box {
+  @include box(70%, 250px, (url('images/laptop.jpg') no-repeat center center));
+  color: #fff;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  /*hope nobody's using ie6...*/
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 5em;
+  }
+}
+.block-box {
+  display: inline-block;
+  @include box(10%, 70px, $gray);
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+  &:hover {
+    box-shadow: 5px 5px 8px $dark-gray;
+  }
+  &.foo {
+    color: #fff;
+    background-color: $red;
+  }
+  &.bar {
+    background-color: $blue;
+  }
+}
+.always-here {
+  @include box(100px, 100px, #fff);
+  @include absolute-position(50px, 800px);
+  border: dashed 3px $red;
+}
+$rainbow-top: 975px;
+$rainbow-left: 300px;
+#r {
+  @include box(100px, 100px, #ff0000);
+  @include absolute-position($rainbow-top, $rainbow-left);
+}
+#o {
+  @include box(100px, 100px, #ff6600);
+  @include absolute-position($rainbow-top + 50, $rainbow-left + 50)
+}
+#y {
+  @include box(100px, 100px, #ffff00);
+  @include absolute-position($rainbow-top + 100, $rainbow-left + 100)
+}
+#g {
+  @include box(100px, 100px, #00cc00);
+  @include absolute-position($rainbow-top + 150, $rainbow-left + 150)
+}
+#b {
+  @include box(100px, 100px, #0000ff);
+  @include absolute-position($rainbow-top + 200, $rainbow-left + 200)
+}
+#v {
+  @include box(100px, 100px, #990099);
+  @include absolute-position($rainbow-top + 250, $rainbow-left + 250)
+}

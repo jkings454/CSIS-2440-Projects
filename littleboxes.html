@@ -3,57 +3,10 @@
     <head>
         <title>Little Boxes</title>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+        <link rel = "stylesheet" type='text/css' href='assets/stylesass.min.css' />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-          body {
-            font-family: "Source Sans Pro", sans-serif;
-            color: #595241;
-          }
-          .big-box{
-            width: 70%;
-            height: 250px;
-            color: #fff;
-            background: url('assets/images/laptop.jpg') no-repeat center center;
-            margin: auto;
-            padding: 20px 20px 20px 20px;
-            text-align: center;
-            /*hope nobody's using ie6...*/
-            display: flex;
-            align-items: center;
-          }
-          .big-box h1 {
-            font-size: 4em;
-          }
-          .block-box {
-            background-color: #B8AE9C;
-            width: 10%;
-            height: 70px;
-            padding: 15px 15px 15px 15px;
-            margin: 10px 10px 10px 10px;
-            box-shadow: 10px 10px 8px #595241;
-            display: inline-block;
-            border-radius: 10px;
-          }
-          .block-box:hover { /*aka how i got away with not using javascript ever*/
-            box-shadow: 5px 5px 8px #595241;
-          }
-          .foo {
-            color: #fff;
-            background-color: #8A0917;
-          }
-          .bar {
-            background-color: #ACCFCC
-          }
-          .always-here {
-            position: absolute;
-            left: 800px;
-            top: 50px;
-            padding: 10px 10px 10px 10px;
-            width: 100px;
-            height: 100px;
-            background-color: #fff;
-            border: 3px dashed #8A0917;
-          }
+
           .free-floating-left {
             position: relative;
             float: left;
@@ -71,7 +24,7 @@
             width: 40%;
             background-color: #ACCFCC;
             height: 250px;
-            margin: 10px 5px 5px 5px;300px
+            margin: 10px 5px 5px 5px;
             padding: 10px 10px 10px 10px;
           }
           .centrist {
@@ -82,59 +35,7 @@
             height: 200px;
             background-color: #B8AE9C
           }
-          #r{
-            position: absolute;
-            z-index: 5;
-            top: 975px;
-            left: 300px;
-            background-color: #ff0000;
-            height: 100px;
-            width: 100px;
-          }
-          #g {
-            position: absolute;
-            z-index: 2;
-            top: 1050px;
-            left: 450px;
-            background-color: #00cc00;
-            height: 100px;
-            width: 100px;
-          }
-          #b {
-            position: absolute;
-            top: 1075px;
-            left: 500px;
-            background-color: #0000ff;
-            height: 100px;
-            width: 100px;
-          }
-          #o {
-            position: absolute;
-            z-index: 4;
-            top: 1000px;
-            left: 350px;
-            background-color: #ff6600;
-            height: 100px;
-            width: 100px;
-          }
-          #y {
-            position: absolute;
-            z-index: 3;
-            top: 1025px;
-            left: 400px;
-            background-color: #ffff00;
-            height: 100px;
-            width: 100px;
-          }
-          #v {
-            position: absolute;
-            z-index: -1;
-            top: 1100px;
-            left: 550px;
-            background-color: #990099;
-            height: 100px;
-            width: 100px;
-          }
+
           a.custom-button{
             margin: 5px 5px 5px 5px;
             padding: 10px 10px 10px 10px;
