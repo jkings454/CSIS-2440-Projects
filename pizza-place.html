@@ -1,0 +1,102 @@
+<html>
+  <head>
+      <title>Pizza Place</title>
+      <link rel ='stylesheet' type ='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+      <link rel = 'stylesheet' type = 'text/css' href='assets/pizza-place.min.css'/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+      <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+  </head>
+  <body>
+    <div id = "main-header">
+      <div class = "container">
+        <h1>WELCOME</h1>
+        <h2>We're very excited to be serving you.</h2>
+        <a href = '/' class = 'btn btn-lg btn-default'>Go back.</a>
+      </div>
+    </div>
+    <div class='container' id = "main">
+      <form>
+        <div class = "row">
+          <div class = "page-header col-md-8 col-md-offset-2">
+            <h3>Tell us about you.</h3>
+          </div>
+          <div class = "form-inline col-md-8 col-md-offset-2">
+            <div class = "form-group">
+              <input name = "First Name" placeholder="First Name" class = "form-control">
+            </div>
+            <div class = "form-group">
+              <input name = "Last Name" placeholder="Last Name" class = "form-control">
+            </div>
+            <br />
+            <br />
+            <div class = "form-group">
+              <input type="email" name = "Email" placeholder="Email Address" class = "form-control" size="37">
+            </div>
+            <br />
+            <br />
+            <div class = "form-group">
+              <input type="tel" name = "Phone Number" placeholder="Phone Number" class = "form-control" size = "37">
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "page-header col-md-8 col-md-offset-2">
+            <h3>Select your crust.</h3>
+          </div>
+          <div class = 'col-md-2 col-md-offset-2'>
+            <h3 class='text-muted'>Size</h3>
+            <div class = "radio">
+              <label>
+                <input name = "Crust Size" value = '8 inch' type="radio"></input>
+                8" crust
+              </label>
+            </div>
+            <div class = "radio">
+              <label>
+                <input name = "Crust Size" value = '12 inch' type="radio"></input>
+                12" crust
+              </label>
+            </div>
+            <div class = "radio">
+              <label>
+                <input name = "Crust Size" value = '14 inch' type="radio"></input>
+                14" crust
+              </label>
+            </div>
+            <div class = "radio">
+              <label>
+                <input name = "Crust Size" value = '16 inch' type="radio"></input>
+                16" crust
+              </label>
+            </div>
+          </div>
+          <div class = "col-md-4 col-md-offset-2">
+            <h3 class='text-muted'>Crust type</h3>
+            <select name='Crust Type' class="form-control">
+              <option>--select one--</option>
+              <option value = "Thin">Thin</option>
+              <option value = "Regular">Regular</option>
+              <option value = "Deep-Dish">Deep-Dish</option>
+              <option value = "Deeper-Dish">Deeper-Dish</option>
+              <option value = "Unreasonably Deep">Unreasonably Deep</option>
+            </select>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "page-header col-md-8 col-md-offset-2">
+            <h3>Select your toppings.</h3>
+          </div>
+          <div class = "col-md-8 col-md-offset-2" id="toppings">
+          </div>
+        </div>
+        <div class = "align-center">
+          <input class = "btn btn-primary btn-lg" type="button" onclick = "getAndDisplayPrice()" value = "Submit your Order"></input>
+          <input class = 'btn btn-default btn-lg' type="reset"></input>
+        </div>
+      </form>
+    </div>
+  <script src = "assets/javascripts/pizza-place.js"></script>
+  </body>
+</html>
