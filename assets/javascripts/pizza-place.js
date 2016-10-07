@@ -28,6 +28,7 @@ function getAllValues(){
     }
   })
   map[$("select").attr('name')] = $("select").val()
+  map[$("textarea").attr('name')] = $("textarea").val()
   return map;
 }
 function getAndDisplayPrice(){
