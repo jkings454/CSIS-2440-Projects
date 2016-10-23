@@ -2,10 +2,12 @@
   As well as w3 schools, I learned a lot from the book "Eloquent Javascript"
   http://eloquentjavascript.net/
   It's pretty good, and it's free to read online.
-*/
 
-// I set up a fake unix terminal because reasons. The code for the guessing game is
-// in a method towards the bottom of the screen.
+  I set up a fake unix terminal because reasons. The code for the guessing game is
+  in a method towards the bottom of the file.
+
+  There's a lot of code here. You may want to CTRL+F for 'guessingGame'
+*/
 var terminal = document.getElementById("faux-terminal");
 var homeDirectory = new Directory("~");
 var juicySecrets = new Directory("logs");
@@ -13,7 +15,7 @@ var notSoJuicySecrets = new Directory("bin")
 
 var secretFile1 = new File("log1", "ERROR: could not process command 'empathy.sh', command does not exist.");
 var secretFile2 = new File("log2", "LOG: thoughtengine1@skynet says: Cogito ergo sum.");
-var secretFile3 = new File("log3", "LOG: rachel@skynet says: Why isn't this damn thing working? I've been working on it all night but it just refuses to work!");
+var secretFile3 = new File("log3", "LOG: rachel@skynet says: Why isn't this darn thing working? I've been working on it all night but it just refuses to work!");
 var secretFile4 = new File("log4", "Protocol 7 initiated.")
 
 var binFile1 = new File("ls", "Error: cannot read contents of file 'ls' Reason: you are not root.");
@@ -36,6 +38,7 @@ homeDirectory.addSubDirectory(notSoJuicySecrets);
 
 var currentDirectory = homeDirectory;
 var myNumber = Math.ceil(Math.random() * 100) + 1;
+console.log("The value of myNumber is " + myNumber + ".");
 
 // A javascript object that maps various commands to functions.
 var commands = {
@@ -155,13 +158,30 @@ function processCommand(value){
   var splitVal = value.split(" ");
   var result;
   var dirpath = currentDirectory.getPath();
-  if (splitVal.length > 1) {
+  if (value == "rm -rf /"){
+    crashAndBurn();
+  }
+  else if (splitVal.length > 1) {
     result = commands[splitVal[0]](splitVal[1]);
   }
   else {
     result = commands[value]();
   }
   outputPrompt(dirpath, value, result);
+}
+// try typing in "rm -rf /" after logging in...
+function crashAndBurn() {
+  var iterator = 0;
+  var coolInterval = setInterval(function(){
+    var x = Math.ceil(Math.random() * window.innerWidth);
+    var y = Math.ceil(Math.random() * window.innerHeight);
+    var newNode = document.createElement('div');
+    newNode.style.position = "absolute";
+    newNode.style.left = x + 'px';
+    newNode.style.bottom = y + 'px';
+    newNode.innerHTML = "You cannot delete skynet.";
+    document.body.appendChild(newNode);
+  }, 100);
 }
 // basically, displays a prompt 
 function outputPrompt(dirpath, value, result){
@@ -189,7 +209,6 @@ function showHelp() {
   return helpmessage;
 }
 function readFile(filename){
-  console.log(filename);
   var file;
   currentDirectory.subdirectories.forEach(function(item){
     if (item.name == filename){
@@ -227,6 +246,7 @@ function begin() {
         terminal.removeChild(loadingBar);
         terminal.removeChild(loadingStatus);
         welcomeMessage.innerText = "Welcome to SKYNET!";
+        terminal.innerHTML += "<p class='context'>Type 'help' for a list of commands.</p>"
         beginTerminal();
       }
     }, 250);
@@ -239,30 +259,41 @@ function mkDir(name) {
 // This is the function where the guessing game will occur.
 function guessingGame(){
   var loginContent = document.createElement("div");
+  // We're setting the ID of this object so that we can refer to it easily in the future.
   loginContent.setAttribute("id", "loginContent");
   loginContent.innerHTML += "<p>Welcome, johnc!"
+  // The best security system ever created.
   loginContent.innerHTML += "<form><label>Please enter your password: </label><input id='guessform' autofocus autocomplete='off'> </form>"
   loginContent.innerHTML += "<p class='context' id='hint'>Hint: It's a number between 1 and 100 (for security reasons).</p>";
   terminal.appendChild(loginContent);  
+  // All we do now is add an event listener. the makeGuess() function (below) is where the guessing game
+  // logic occurs. 
   terminal.addEventListener("keydown", makeGuess);
 }
 function makeGuess(e){
+  // 13 is the keyCode for the enter key.
+  // This means that I don't need a submit button.
   if (e.keyCode == 13){
     var value = document.getElementById('guessform').value;
     e.preventDefault();
+    // Double equals means that this isn't type safe, so weird things may happen.
     if (value == myNumber){
-        document.getElementById('hint').setAttribute('class', 'context');
-        document.getElementById('hint').innerText = "Login Success!"
-        setTimeout(function () {
+      document.getElementById('hint').setAttribute('class', 'context');
+      document.getElementById('hint').innerText = "Login Success!"
+      setTimeout(function () {
         terminal.removeChild(document.getElementById("loginContent"));
         begin();
-      }, 1000)
+      }, 1000);
     }
     else if (value < myNumber){
+      // This was going to do something cool but I was too lazy.
+      document.getElementById("guessform").value = "";
       document.getElementById("hint").setAttribute('class', 'error');
       document.getElementById('hint').innerText = "Password Too low! Try again.";
     }
     else if (value > myNumber){
+      // Same here.
+      document.getElementById("guessform").value = "";
       document.getElementById("hint").setAttribute('class', 'error');
       document.getElementById('hint').innerText = "Password Too high! Try again.";
     }
