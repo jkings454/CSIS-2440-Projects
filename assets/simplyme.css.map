@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,OAAQ;EAJN,KAAK,EAKU,EAAE;EAJjB,MAAM,EAIa,EAAE;EAHrB,UAAU,EARN,OAAO",
+"sources": ["simplyme.scss"],
+"names": [],
+"file": "simplyme.css"
+}

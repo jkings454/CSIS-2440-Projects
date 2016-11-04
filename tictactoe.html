@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TicTacToe</title>
+	<link rel ='stylesheet' type ='text/css' href=
+		'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<style>
+		.box {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			align: center;
+			min-height: 16rem;
+			width: 16rem;
+			border: 3px solid #000;
+		}
+		/*Wonderful clever puns here.*/
+		.tic-tac-row {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			font-size: 8rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class = "container-fluid">
+		<div class = "col-md-4">
+			<div class = "tic-tac-row">
+				<div class="box" onclick="playerMoved(this, 1)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 2)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 4)">
+				</div>
+			</div>
+			<div class = "tic-tac-row">
+				<div class="box" onclick="playerMoved(this, 8)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 16)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 32)">
+				</div>
+			</div>
+			<div class="tic-tac-row">
+				<div class="box" onclick="playerMoved(this, 64)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 128)">
+				</div>
+				<div class="box" onclick="playerMoved(this, 256)">
+				</div>
+			</div>
+		</div>
+		<div class = "col-md-8">
+			<div class = "page-header">
+				<h1>Tic-Tac-Toe</h1>
+			</div>
+			<h2 id="pX"></h2>
+			<h2 id="pO"></h2>
+			<h2>It's <span id="turn"></span>'s Turn!</h2>
+			<h2 id='victory'></h2>
+		</div>
+		<div class = "col-md-12">
+			<p>
+				<button class = "btn btn-primary" onclick="resetBoard()">Clear Board</button>
+				<button class = "btn btn-default" onclick="resetEverything()">Reset</button>
+			</p>
+			<p><a href="/" class="text-muted">Go Back</a></p>
+		</div>
+		
+
+	</div>
+	<script src="assets/javascripts/tictactoe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+$red: #8A0917;
+$blue : #ACCFCC;
+$gray : #B8AE9C;
+$dark-gray : #595241;
+
+@mixin box($width, $height, $background){
+  width: $width;
+  height: $height;
+  background: $background;
+}
+.my-box {
+    @include box(40, 40, $red);
+}
