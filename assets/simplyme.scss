@@ -1,13 +1,84 @@
-$red: #8A0917;
-$blue : #ACCFCC;
-$gray : #B8AE9C;
-$dark-gray : #595241;
+$blue: #00e6ac;
+$grey: #4d4d4d;
+$dark-grey: #333333;
 
-@mixin box($width, $height, $background){
-  width: $width;
-  height: $height;
-  background: $background;
+@mixin bg($background, $foreground)
+{
+  background-color: $background;
+  color: $foreground;
 }
-.my-box {
-    @include box(40, 40, $red);
+html {
+  margin-top: 75px;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+.bg-1{
+  @include bg($blue, #fff);
+  h1 {
+    font-size: 5rem;
+  }
+}
+.bg-2{
+  @include bg($grey, #fff);
+}
+.bg-3 {
+  @include bg(inherit, $grey);
+}
+.bg-4 {
+  @include bg($dark-grey, #fff);
+  a {
+    color: inherit !important;
+    :hover {
+      color: inherit;
+    }
+    :visited {
+      color: inherit;
+    }
+    :active {
+      color: inherit;
+    }
+  }
+}
+.fade-in {
+  opacity: 0;
+}
+.scroll-in {
+  @extend .fade-in;
+}
+.container-fluid {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.bird-helper {
+  object-fit: none;
+  min-height: 300px;
+  object-position: top center;
+  width: 300px;
+  border: 4px solid white;
+  box-shadow: 0px 0px 30px $grey;
+}
+.image-helper {
+  object-fit: contain;
+  object-position: center;
+  max-height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px $grey;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 80px 5px $grey;
+  li {
+    a:hover{
+      color: $blue !important;
+      background-color: #f2f2f2 !important;
+    }
+  }
 }

@@ -1,6 +1,69 @@
-.my-box {
-  width: 40;
-  height: 40;
-  background: #8A0917; }
+html {
+  margin-top: 75px; }
+
+body {
+  font-family: 'Titillium Web', sans-serif; }
+
+.bg-1 {
+  background-color: #00e6ac;
+  color: #fff; }
+  .bg-1 h1 {
+    font-size: 5rem; }
+
+.bg-2 {
+  background-color: #4d4d4d;
+  color: #fff; }
+
+.bg-3 {
+  background-color: inherit;
+  color: #4d4d4d; }
+
+.bg-4 {
+  background-color: #333333;
+  color: #fff; }
+  .bg-4 a {
+    color: inherit !important; }
+    .bg-4 a :hover {
+      color: inherit; }
+    .bg-4 a :visited {
+      color: inherit; }
+    .bg-4 a :active {
+      color: inherit; }
+
+.fade-in, .scroll-in {
+  opacity: 0; }
+
+.container-fluid {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.bird-helper {
+  object-fit: none;
+  min-height: 300px;
+  object-position: top center;
+  width: 300px;
+  border: 4px solid white;
+  box-shadow: 0px 0px 30px #4d4d4d; }
+
+.image-helper {
+  object-fit: contain;
+  object-position: center;
+  max-height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px #4d4d4d; }
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 80px 5px #4d4d4d; }
+  .navbar li a:hover {
+    color: #00e6ac !important;
+    background-color: #f2f2f2 !important; }
 
 /*# sourceMappingURL=simplyme.css.map */
