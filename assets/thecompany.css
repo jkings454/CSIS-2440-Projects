@@ -1,6 +1,9 @@
 html {
   margin-top: 50px; }
 
+body {
+  font-family: 'Karla', sans-serif; }
+
 .parallax {
   /*
       Really nice parallax scrolling effect.
