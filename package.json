@@ -1,0 +1,22 @@
+{
+  "name": "web-site",
+  "version": "1.0.0",
+  "description": "A very cool web site for cool people",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"ERROR: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkings454/html.git"
+  },
+  "author": "josh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkings454/html/issues"
+  },
+  "homepage": "https://github.com/jkings454/html#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
