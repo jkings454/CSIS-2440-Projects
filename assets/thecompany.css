@@ -6,8 +6,8 @@ body {
 
 .parallax {
   /*
-      Really nice parallax scrolling effect.
-  */
+        Really nice parallax scrolling effect.
+    */
   background: url("images/laptop.jpg") no-repeat center center;
   background-attachment: fixed;
   color: #FFF;
@@ -29,12 +29,14 @@ body {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0; } }
+
 /*  
     Fixing something that bugged me a lot.
 */
 @media screen and (min-width: 1600px) {
   .col-sm-4 {
     text-align: center; } }
+
 .bg-grey {
   background-color: #f6f6f6; }
 
@@ -72,6 +74,7 @@ body {
   font-weight: 400;
   font-style: italic;
   margin: 70px 0; }
+
 .item span {
   font-style: normal; }
 
@@ -117,6 +120,7 @@ body {
 .navbar-nav li a:hover {
   color: #046380 !important;
   background-color: #fff !important; }
+
 .navbar-nav li.active a {
   color: #046380 !important;
   background-color: #fff !important; }
@@ -129,5 +133,3 @@ footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
   color: #046380; }
-
-/*# sourceMappingURL=thecompany.css.map */

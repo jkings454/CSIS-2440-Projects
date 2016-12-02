@@ -1,0 +1,89 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #595241; }
+
+.big-box {
+  width: 70%;
+  height: 250px;
+  background: url("images/laptop.jpg") no-repeat center center;
+  color: #fff;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  /*hope nobody's using ie6...*/
+  display: flex;
+  align-items: center; }
+  .big-box h1 {
+    font-size: 5em; }
+
+.block-box {
+  display: inline-block;
+  width: 10%;
+  height: 70px;
+  background: #B8AE9C;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px; }
+  .block-box:hover {
+    box-shadow: 5px 5px 8px #595241; }
+  .block-box.foo {
+    color: #fff;
+    background-color: #8A0917; }
+  .block-box.bar {
+    background-color: #ACCFCC; }
+
+.always-here {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 800px;
+  border: dashed 3px #8A0917; }
+
+#r {
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  position: absolute;
+  top: 975px;
+  left: 300px; }
+
+#o {
+  width: 100px;
+  height: 100px;
+  background: #ff6600;
+  position: absolute;
+  top: 1025px;
+  left: 350px; }
+
+#y {
+  width: 100px;
+  height: 100px;
+  background: #ffff00;
+  position: absolute;
+  top: 1075px;
+  left: 400px; }
+
+#g {
+  width: 100px;
+  height: 100px;
+  background: #00cc00;
+  position: absolute;
+  top: 1125px;
+  left: 450px; }
+
+#b {
+  width: 100px;
+  height: 100px;
+  background: #0000ff;
+  position: absolute;
+  top: 1175px;
+  left: 500px; }
+
+#v {
+  width: 100px;
+  height: 100px;
+  background: #990099;
+  position: absolute;
+  top: 1225px;
+  left: 550px; }
