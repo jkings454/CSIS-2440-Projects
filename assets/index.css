@@ -1,0 +1,130 @@
+html {
+  margin-top: 80px; }
+
+body {
+  font-family: 'Dosis', sans-serif; }
+
+p {
+  font-size: 1.3em; }
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  border-color: #00cc99;
+  font-size: 1.3em; }
+  .navbar .navbar-brand {
+    color: #006666;
+    font-size: 1.5em; }
+    .navbar .navbar-brand:hover {
+      color: #00cc99; }
+  .navbar .navbar-toggle {
+    background-color: #fff;
+    border: none;
+    color: #006666; }
+    .navbar .navbar-toggle:active {
+      background-color: #fff; }
+    .navbar .navbar-toggle:focus {
+      background-color: #fff; }
+
+.nav.navbar-nav.navbar-right li a {
+  color: #006666; }
+  .nav.navbar-nav.navbar-right li a:hover {
+    color: #00cc99; }
+
+.nav.navbar-nav.navbar-right li.active a {
+  color: #00cc99 !important;
+  text-decoration: underline !important;
+  background-color: #fff !important; }
+
+.jumbotron h1 {
+  font-size: 6em; }
+
+.jumbotron p {
+  font-size: 1.7em; }
+
+@media screen and (min-width: 1300px) {
+  #intro {
+    padding-top: 150px;
+    padding-bottom: 150px; } }
+
+#intro {
+  margin-bottom: 0; }
+
+.my-picture {
+  height: 300px;
+  filter: grayscale(40%); }
+
+.bg-1 {
+  background: linear-gradient(to top left, #006666, #00cc99);
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: 0px 0px 10px #000; }
+  .bg-1 img {
+    box-shadow: 0px 0px 10px #666666; }
+
+.padding {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+footer {
+  background-color: #006666;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 50px; }
+
+.project-image {
+  max-height: 200px; }
+
+.little-box-1 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 65%;
+  height: 75%;
+  background-color: #006666;
+  border-radius: 10px;
+  height: 200px;
+  border-radius: 10px; }
+
+.little-box-2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 65%;
+  height: 75%;
+  background-color: #00cc99;
+  border-radius: 10px; }
+
+.little-box-3 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 65%;
+  height: 75%;
+  background-color: #00e6e6;
+  border-radius: 10px; }
+
+a .hugen {
+  font-size: 200px;
+  color: #006666; }
+  a .hugen:hover {
+    color: #006666; }
+  a .hugen:active {
+    color: #006666; }
+
+.bird {
+  width: 200px;
+  height: 200px;
+  object-fit: none;
+  object-position: top;
+  border-radius: 100%; }
+
+.hans {
+  height: 200px;
+  width: 200px;
+  object-fit: none;
+  object-position: 50% 10%;
+  border-radius: 100%; }

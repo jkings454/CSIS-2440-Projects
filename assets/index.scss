@@ -1,0 +1,147 @@
+$greenish-blue: #00cc99;
+$dark-greenish-blue: #006666;
+
+@mixin bg($color, $top, $bottom) {
+    background-color: $color;
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+html {
+    margin-top: 80px;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+}
+p {
+    font-size: 1.3em;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    border-color: $greenish-blue;
+    font-size: 1.3em;
+    .navbar-brand {
+        color: $dark-greenish-blue;
+        font-size: 1.5em;
+        &:hover {
+            color: $greenish-blue;
+        }
+    }
+    .navbar-toggle {
+        background-color: #fff;
+        border: none;
+        color: $dark-greenish-blue;
+        &:active {
+            background-color: #fff;
+        }
+        &:focus {
+            background-color: #fff;
+        }
+    }
+}
+.nav.navbar-nav.navbar-right li{
+    a {
+        color: $dark-greenish-blue;
+        &:hover {
+            color: $greenish-blue;
+        }
+    }
+    &.active a {
+        color: $greenish-blue !important;
+        text-decoration: underline !important;
+        background-color: #fff !important;
+    }
+    
+}
+.jumbotron {
+    h1 {
+        font-size: 6em;
+    }
+    p {
+        font-size: 1.7em;
+    }
+}
+@media screen and (min-width: 1300px){
+    #intro {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+#intro {
+    margin-bottom: 0;
+}
+.my-picture {
+    height: 300px;
+    filter: grayscale(40%);
+}
+.bg-1 {
+    background: linear-gradient(to top left,$dark-greenish-blue, $greenish-blue);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 10px #000;
+    img {
+        box-shadow: 0px 0px 10px #666666;
+    }
+}
+.padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+footer {
+    background-color: $dark-greenish-blue;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+.project-image {
+    max-height: 200px;
+}
+@mixin little-box($color){
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 65%;
+    height: 75%;
+    background-color: $color;
+    border-radius: 10px;
+}
+.little-box-1 {
+    @include little-box($dark-greenish-blue);
+    height: 200px;
+    border-radius: 10px;
+}
+.little-box-2 {
+    @include little-box($greenish-blue)
+}
+.little-box-3 {
+    @include little-box(#00e6e6);
+}
+a .hugen {
+    font-size: 200px;
+    color: $dark-greenish-blue;
+    &:hover {
+        color: $dark-greenish-blue;
+    }
+    &:active {
+        color: $dark-greenish-blue;
+    }
+}
+.bird {
+    width: 200px;
+    height: 200px;
+    object-fit: none;
+    object-position: top;
+    border-radius: 100%;
+}
+.hans {
+    height: 200px;
+    width: 200px;
+    object-fit: none;
+    object-position: 50% 10%;
+    border-radius: 100%;
+}

@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>CSIS 1430 Landing Page</title>
-      <link rel ='stylesheet' type ='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
-      <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-      <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-      <link rel = 'stylesheet' type = 'text/css' href = '/assets/styles.css'/>
-      <meta name='viewport' content='width=device-width, initial-scale=1'/>
-  </head>
-  <body>
-    <div class='container'>
-      <div class = "row">
-        <div class = 'page-header'>
-          <h1>Josh's CSIS 1430 Page.</h1>
-        </div>
-        <div class = "col-md-3">
-          <div class = "panel panel-default">
-            <div class = "panel-heading">
-              <h3 style="text-align: center"><strong>navigation station</strong> </h3>
+
+<head>
+    <title></title>
+    <link rel='stylesheet' type='text/css' 
+        href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href = 'assets/index.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <script type='text/javascript' 
+            src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script type='text/javascript' 
+        src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body data-spy='scroll' data-target=".navbar" data-offset="100">
+    <nav class = 'navbar navbar-default navbar-fixed-top'>
+        <div class = 'container'>
+            <div class = 'navbar-header'>
+                <button type="button" class="navbar-toggle" data-toggle='collapse' data-target='#my-navbar'>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href = '#' class = 'navbar-brand'>josh nichols</a>
             </div>
-            <div class = "list-group">
-              <a href = "old-index.html" class = "list-group-item">My old index page</a>
-              <a href = "projects.html" class = "list-group-item">Projects from my old portfolio</a>
-              <a href = "resume.html" class = "list-group-item">My Resume</a>
-              <a href = "utahmap.html" class = "list-group-item">Utah Image Map</a>
-              <a href = "littleboxes.html" class = "list-group-item">Little Boxes</a>
-              <a href = "pizza-place.html" class = "list-group-item ">Pizza Place</a>
-              <a href = "/skynet/" class = "list-group-item">Guessing Game</a>
-              <a href = "tictactoe.html" class = "list-group-item">Tic Tac Toe</a>
-              <a href = "simplyme.html" class = "list-group-item">Simply Me</a>
-              <a href = "thecompany.html" class = "list-group-item">The Company</a>
-              <a href = "theband.html" class = 'list-group-item'>The Band<span class="badge">new!</span></a>
+            <div class='collapse navbar-collapse' id='my-navbar'>
+                <ul class = 'nav navbar-nav navbar-right'>
+                    <li><a href = '#about'>about me</a></li>
+                    <li><a href = '#projects'>projects</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class = "col-md-9">
-          <h3>Welcome to a world of magical possibilities.</h3>
-          <p>This is my index page. It could change at any time. On the right you'll find a "nav-center" with links to various pages that
-            I've made for the class CSIS 1430. This page is for navigational purposes only, and is in no way permanent.</p>
-          <h3>Some links outside of this site that you may wish to visit:</h3>
-          <ul>
-            <li><a href = "http://joshualnichols.com" target="_blank">My website</a></li>
-            <li><a href = "https://github.com/jkings454" target="_blank">My GitHub page</a></li>
-            <li><a href = "http://www.w3schools.com" target="_blank">W3 Schools</a></li>
-            <li><a href = "http://getbootstrap.com" target="_blank">Bootstrap documentation</a></li>
-            <li><a href = "https://aws.amazon.com" target="_blank">Amazon Web Services</a></li>
-          </ul>
-          <h1>IMPORTANT UPDATE</h1>
-          <p>This page has served us well, however, it is time that we bit it adieu. It shall be reborn.</p>
+    </nav>
+    <div class = 'bg-1'>
+        <div class = 'container text-center' id="about">
+            <h1>hey</h1>
+            <img src = 'assets/images/me.jpg' class = 'img-circle my-picture'/>
+            <p>
+               My name is Josh, and I'm currently studying computer science at Salt Lake Community College.
+            </p>
+            <p>I am also a big nerd.</p>
         </div>
-      </div>
-      <div class = "row">
-        <p><small>If you have any questions or concerns:
-          please email me at <a href="mailto:jnicho97@bruinmail.slcc.edu">jnicho97@bruinmail.slcc.edu</a></p>
-      </div>
     </div>
-  </body>
+
+    <div class = 'container text-center' id = 'projects'>
+        <h1>projects</h1>
+        <p>I have a lot of projects.</p>
+        <br />
+        <div class = 'row'>
+            <div class = 'col-sm-4'>
+                <a href = 'old-index.html'>
+                    <img src = 
+                    'http://www.clipartkid.com/images/727/clipart-clipart-kip-animaatjes-37-ClW4UE-clipart.jpg'
+                    class = 'project-image'>
+                </a>
+                <h3>my old index page</h3>
+            </div>
+            <div class = 'col-sm-4'>
+                <a href = 'resume.html'>
+                    <span class = 'glyphicon glyphicon-briefcase hugen'></span>
+                </a>
+                <h3>my resume</h3>
+            </div>
+            <div class = 'col-sm-4'>
+                <a href = 'utahmap.html'>
+                    <img src = 'assets/images/utah-map.jpg' class = 'project-image' />
+                </a>
+                <h3>utah map</h3>
+            </div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-sm-4'>
+                <a href = 'littleboxes.html'>
+                    <div class = 'little-box-1'>
+                        <div class = 'little-box-2'>
+                            <div class = 'little-box-3'></div>
+                        </div>
+                    </div>
+                </a>
+                <h3>little boxes</h3>
+            </div>
+            
+            <div class = 'col-sm-4'>
+                <a href = 'pizza-place.html'>
+                    <img src = 'assets/images/pizza.png' class = 'project-image'/>
+                </a>
+                <h3>pizza place</h3>
+            </div>
+            <div class = 'col-sm-4'>
+                <a href = '/skynet'>
+                    <span class = 'glyphicon glyphicon-console hugen'></span>
+                </a>
+                <h3>guessing game</h3>
+            </div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-sm-4'>
+                <a href = 'tictactoe.html'>
+                    <img src = 'assets/images/tictactoe.png' class = 'project-image' />
+                </a>
+                <h3>tic tac toe</h3>
+            </div>
+            <div class = 'col-sm-4'>
+                <a href = 'simplyme.html'>
+                    <img src = 'assets/images/bird.jpg' class = 'project-image bird'/>
+                </a>
+                <h3>simply me</h3>
+            </div>
+            <div class = 'col-sm-4'>
+                <a href = 'thecompany.html'>
+                    <span class = 'glyphicon glyphicon-globe hugen'></span>
+                </a>
+                <h3>the company</h3>
+            </div>
+        </div>
+        <div class = 'row'>
+            <div class = 'col-sm-4 col-sm-offset-4'>
+                <a href = 'theband.html'>
+                    <img src = 'assets/images/hans.jpg' class = 'hans'>
+                </a>
+                <h3>the band</h3>
+            </div>
+        </div>
+        <p><a href = 'projects.html'>and even more here...</a></p>
+    </div>
+    <footer>
+        <div class = 'container text-center'>
+            <p>created by josh nichols</p>
+        </div>
+    </footer>
+    <script src = 'assets/javascripts/index.js'></script>
+</body>
+
 </html>
