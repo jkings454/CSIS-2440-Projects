@@ -13,7 +13,7 @@ function getGroups(){
     success: showGroups
   })
 }
-
+// This is a test comment. Please ignore.
 /*
   This function is called when the AJAX request succeeds. It will display the information it recieved
   from the JSON request onto the DOM, using jQuery functions.
