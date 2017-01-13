@@ -12,12 +12,30 @@
 </head>
 <body>
 <div class='container'>
+    <!--
+        I'm not sure whether these are supposed to be in the PHP comments or the HTML comments so I did both.
+
+        Name: Joshua Nichols
+        Age: 20
+    -->
     <a href = "/">Back to homepage.</a>
     <?php
         echo "<h1>Hello world</h1>";
-        $greeting = "PHP is fun!\n";
+        $greeting = "PHP is FUN!\n";
         echo $greeting;
+
+        /*  Name: Joshua Nichols
+         *  Age: 20
+         */
     ?>
+    <script>
+        // Eh, why not write this as a javascript comment for completion's sake.
+        /*
+            Name: Joshua Nichols
+            Age: 20
+         */
+    </script>
+
 </div>
 </body>
 </html>
