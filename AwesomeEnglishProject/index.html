@@ -1,0 +1,196 @@
+<!--
+    Thanks for checking my English project out! This was a lot of fun to make, so I hope you enjoy it as much as
+    I did making it.
+
+    If you didn't already realize, there isn't actually an internal server error. I was just thinking about how I can
+    express anger clearly using the skills that I have at my disposal, and this idea came into my mind.
+
+    It's REALLY frustrating when things don't go as planned. You spend five minutes waiting for a project to load,
+    and nothing comes out of it. Why did you wait for this? What did you expect?
+
+    Then again, is it worth getting angry over something so petty? Who knows.
+
+    Below is all of the code for the project. Everything is on one page, and I've tried to comment everything as well
+    as I could.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A very awesome english project</title>
+    <link rel='stylesheet' type='text/css'
+          href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+
+
+    <script type='text/javascript'
+            src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script type='text/javascript'
+            src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .loader {
+            color: #2d2c2c;
+            font-size: 90px;
+            text-indent: -9999em;
+            overflow: hidden;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            margin: 72px auto;
+            position: relative;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load6 1.7s infinite ease;
+            animation: load6 1.7s infinite ease;
+        }
+
+        @-webkit-keyframes load6 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            5%,
+            95% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            10%,
+            59% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+            }
+            20% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+            }
+            38% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+        }
+
+        @keyframes load6 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            5%,
+            95% {
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+            10%,
+            59% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+            }
+            20% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+            }
+            38% {
+                box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "jumbotron">
+        <div class = "container">
+            <h1>What is anger?</h1>
+            <h3>Using modern web technologies we can discover what anger means to different people.</h3>
+            <p>Please note that it may take a while to load and process all of the information.</p>
+        </div>
+    </div>
+    <div class="container">
+        <noscript>
+            <!-- this project literally won't work without javascript -->
+            <h1 class="text-danger"> Please view this file in a javascript-enabled browser. </h1>
+        </noscript>
+        <div id="app">
+            <div class="loader"></div>
+            <div id = "loading-text">Loading project...</div>
+        </div>
+        <p class="small text-muted.">created by Joshua Nichols. Loading spinners courtesy of
+            <a href="http://projects.lukehaas.me/css-loaders/">Luke Haas</a></p>
+    </div>
+    <div class = "modal fade" tabindex = "-1" role="dialog" id="info-modal">
+        <div class = "modal-dialog" role="document">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class = 'modal-title'>Information</h4>
+                </div>
+                <div class = 'modal-body'>
+                    <div class = 'page-header'>
+                        <h3>What is this thing about?</h3>
+                    </div>
+                    <p>Well, it's about anger. What's more frustrating than a website that takes
+                    five whole minutes to load and fails?</p>
+                    <div class = 'page-header'>
+                        <h3>Why did you choose to represent anger like this?</h3>
+                    </div>
+                    <p>Well, I know how to make websites, and I know how angry I feel whenever something like this
+                    actually happens, so I figured I'd use my talents to do this.</p>
+                    <div class = 'page-header'>
+                        <h3>Why did you make me wait five minutes for nothing?</h3>
+                    </div>
+                    <p>Because, "anger."</p>
+                </div>
+                <div class = 'modal-footer'>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var isImpatient = location.search.match(/isimpatient/);
+        var needsInfo = location.search.match(/needsinfo/);
+        if (needsInfo) $("#info-modal").modal("toggle");
+        var TOTAL_TIME = isImpatient ? 60000 : 300000; // This is how much time it takes to load the page, in milliseconds.
+                                 // It equates to 5 minutes.
+        var INTERVAL_TIME = TOTAL_TIME / 5; // This is how much time it takes to change the loading text at the bottom.
+
+        // all of the incredibly clever loading text that you see at the bottom.
+        var loadingTexts = ["We'll have your page loaded soon!",
+                            "Almost done...",
+                            "Sorry, not almost done.",
+                            "This is taking much longer than normal. " +
+                            // Yes, this does reload the entire page. DON'T CLICK IT UNLESS YOU WANT TO WAIT A LONG WHILE.
+                            "<a href = \"#\" onclick = location.reload() >Reload?</a>"];
+
+
+        function changeLoadingText(id) {
+            // A quick function to change the text to something else.
+            $('#loading-text').html(loadingTexts[id])
+        }
+
+        function doneLoading() {
+            // This is what happens when the page is done "loading"
+            var page = "<h3 class = 'text-danger'>500 internal server error</h3>"
+            page += "<p>The server has encountered an unexpected error and the request could not be completed.</p>"
+            page += "<p>Sorry for the inconvenience.</p>"
+            page += "<p class = 'text-muted'>(press CTRL+SHIFT+I for more information!)</p>"
+            $("#app").html(page);
+        }
+        var currentId = 0;
+        setInterval(function () {
+            // setInterval is a built in javascript function that lets you perform X task every Y milliseconds.
+            // It's what I use to change the loading text.
+            changeLoadingText(currentId);
+            currentId++;
+        }, INTERVAL_TIME);
+
+
+
+        // setTimeout is similar to setInterval but it only happens once. After X milliseconds Y task will be peformed.
+        setTimeout(doneLoading, TOTAL_TIME);
+    </script>
+</body>
+</html>
