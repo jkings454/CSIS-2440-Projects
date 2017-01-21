@@ -3,158 +3,190 @@
 
 <head>
     <title>Josh's web site</title>
-    <link rel='stylesheet' type='text/css' 
-        href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
-    <link rel='stylesheet' type='text/css' href = 'assets/index.css'/>
+    <link rel='stylesheet' type='text/css'
+          href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' type='text/css' href='assets/index.css'/>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
-    <script type='text/javascript' 
+    <script type='text/javascript'
             src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script type='text/javascript' 
-        src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script type='text/javascript'
+            src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
-<body data-spy='scroll' data-target=".navbar" data-offset="100">
-    <nav class = 'navbar navbar-default navbar-fixed-top'>
-        <div class = 'container'>
-            <div class = 'navbar-header'>
-                <button type="button" class="navbar-toggle" data-toggle='collapse' data-target='#my-navbar'>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                </button>
-                <a href = '#' class = 'navbar-brand'>josh nichols</a>
-            </div>
-            <div class='collapse navbar-collapse' id='my-navbar'>
-                <ul class = 'nav navbar-nav navbar-right'>
-                    <li><a href = '#about'>about me</a></li>
-                    <li><a href = '#csis1430'>csis 1430 projects</a></li>
-                    <li><a href = '#csis2440'>csis 2440 projects</a></li>
-                </ul>
-            </div>
+<body data-spy='scroll' data-target=".navbar" data-offset="100" id="home">
+<nav class='navbar navbar-default navbar-fixed-top'>
+    <div class='container'>
+        <div class='navbar-header'>
+            <button type="button" class="navbar-toggle" data-toggle='collapse' data-target='#my-navbar'>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a href='#home' class='navbar-brand'>josh nichols</a>
         </div>
-    </nav>
-    <div class = 'bg-1'>
-        <div class = 'container text-center' id="about">
-            <h1>hey</h1>
-            <img src = 'assets/images/me.jpg' class = 'img-circle my-picture'/>
-            <p>
-               My name is Josh, and I'm currently studying computer science at Salt Lake Community College.
-            </p>
-            <p>I am also a big nerd.</p>
+        <div class='collapse navbar-collapse' id='my-navbar'>
+            <ul class='nav navbar-nav navbar-right'>
+                <li><a href='#about'>about me</a></li>
+                <li><a href='#csis1430'>csis 1430 projects</a></li>
+                <li><a href='#csis2440'>csis 2440 projects</a></li>
+            </ul>
         </div>
     </div>
-
-    <div class = 'container text-center' id = 'csis1430'>
+</nav>
+<div class='bg-1'>
+    <div class='container text-center'>
+        <h1>hey</h1>
+        <img src='assets/images/me.jpg' class='img-circle my-picture'/>
+        <p>
+            My name is Josh, and I'm currently studying computer science at Salt Lake Community College.
+        </p>
+        <p>I am also a big nerd.</p>
+    </div>
+</div>
+<div class="padding" id="about">
+    <div class="container text-center">
+        <h1>about me</h1>
+        <p>I'm just a man with a website and a knack for learning.</p>
+        <p>I really like video games, coding, and video games.</p>
+        <p>I occasionally like to play board games as well.</p>
+        <p>I am very interesting.</p>
+        <br/>
+        <br/>
+        <p>My favorite book is <i>To Kill A Mockingbird.</i></p>
+        <p>My favorite movie is <i>Star Wars: The Empire Strikes Back.</i></p>
+    </div>
+</div>
+<div class="bg-2">
+    <div class='container text-center light-padding' id='csis1430'>
         <h1>csis1430 projects</h1>
         <p>Static pages for CSIS 1430.</p>
-        <br />
-        <div class = 'row'>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/old-index.html'>
+        <br/>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/old-index.html'>
                     <!-- badidea.jpg -->
-                    <img src = 
-                    'http://www.clipartkid.com/images/727/clipart-clipart-kip-animaatjes-37-ClW4UE-clipart.jpg'
-                    class = 'project-image'>
+                    <img src=
+                                 'http://www.clipartkid.com/images/727/clipart-clipart-kip-animaatjes-37-ClW4UE-clipart.jpg'
+                         class='project-image img-circle'>
                 </a>
                 <h3>my old index page</h3>
             </div>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/resume.html'>
-                    <span class = 'glyphicon glyphicon-briefcase hugen'></span>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/resume.html'>
+                    <span class='glyphicon glyphicon-briefcase hugen'></span>
                 </a>
                 <h3>my resume</h3>
             </div>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/utahmap.html'>
-                    <img src = 'assets/images/utah-map.jpg' class = 'project-image' />
+            <div class='col-sm-4'>
+                <a href='CSIS1430/utahmap.html'>
+                    <img src='assets/images/utah-map.jpg' class='project-image'/>
                 </a>
                 <h3>utah map</h3>
             </div>
         </div>
-        <div class = 'row'>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/littleboxes.html'>
-                    <div class = 'little-box-1'>
-                        <div class = 'little-box-2'>
-                            <div class = 'little-box-3'></div>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/littleboxes.html'>
+                    <div class='little-box-1'>
+                        <div class='little-box-2'>
+                            <div class='little-box-3'></div>
                         </div>
                     </div>
                 </a>
                 <h3>little boxes</h3>
             </div>
-            
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/pizza-place.html'>
-                    <img src = 'assets/images/pizza.png' class = 'project-image'/>
+
+            <div class='col-sm-4'>
+                <a href='CSIS1430/pizza-place.html'>
+                    <img src='assets/images/pizza.png' class='project-image'/>
                 </a>
                 <h3>pizza place</h3>
             </div>
-            <div class = 'col-sm-4'>
-                <a href = '/CSIS1430/skynet'>
-                    <span class = 'glyphicon glyphicon-console hugen'></span>
+            <div class='col-sm-4'>
+                <a href='/CSIS1430/skynet'>
+                    <span class='glyphicon glyphicon-console hugen'></span>
                 </a>
                 <h3>guessing game</h3>
             </div>
         </div>
-        <div class = 'row'>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/tictactoe.html'>
-                    <img src = 'assets/images/tictactoe.png' class = 'project-image' />
+        <div class='row'>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/tictactoe.html'>
+                    <img src='assets/images/tictactoe.png' class='project-image'/>
                 </a>
                 <h3>tic tac toe</h3>
             </div>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/simplyme.html'>
-                    <img src = 'assets/images/bird.jpg' class = 'project-image bird'/>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/simplyme.html'>
+                    <img src='assets/images/bird.jpg' class='project-image bird'/>
                 </a>
                 <h3>simply me</h3>
             </div>
-            <div class = 'col-sm-4'>
-                <a href = 'CSIS1430/thecompany.html'>
-                    <span class = 'glyphicon glyphicon-globe hugen'></span>
+            <div class='col-sm-4'>
+                <a href='CSIS1430/thecompany.html'>
+                    <span class='glyphicon glyphicon-globe hugen'></span>
                 </a>
                 <h3>the company</h3>
             </div>
         </div>
-        <div class = 'row'>
-            <div class = 'col-sm-4 col-sm-offset-4'>
-                <a href = 'CSIS1430/theband.html'>
-                    <img src = 'assets/images/hans.jpg' class = 'hans'>
+        <div class='row'>
+            <div class='col-sm-4 col-sm-offset-4'>
+                <a href='CSIS1430/theband.html'>
+                    <img src='assets/images/hans.jpg' class='hans'>
                 </a>
                 <h3>the band</h3>
             </div>
         </div>
-        <p><a href = 'CSIS1430/projects.html'>and even more here...</a></p>
+        <p><a href='CSIS1430/projects.html'>and even more here...</a></p>
     </div>
-    <div class = 'bg-2'>
-        <div class = 'container text-center' id = 'csis2440'>
-            <h1>csis2440</h1>
-            <p>Dynamic pages built with PHP.</p>
-            <br/>
-            <div class = 'row'>
-                <div class = 'col-sm-4 col-sm-offset-2'>
-                    <a href = 'CSIS2440/HelloWorld.php'>
-                        <span class = "glyphicon glyphicon-console white hugen"></span>
-                    </a>
-                    <h3>hello world</h3>
-                </div>
-                <div class = 'col-sm-4'>
-                    <a href = 'CSIS2440/whatdayisit.php'>
-                        <span class = 'glyphicon glyphicon-calendar white hugen'></span>
-                    </a>
-                    <h3>what day is it?</h3>
-                </div>
+</div>
+<div class='light-padding'>
+    <div class='container text-center' id='csis2440'>
+        <h1>csis2440</h1>
+        <p>Dynamic pages built with PHP.</p>
+        <br/>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <a href="" class="disabled">
+                    <span class="glyphicon glyphicon-question-sign hugen"></span>
+                </a>
+                <p><span class="label label-default">coming soon!</span></p>
+                <h3>who am i?</h3>
+            </div>
+            <div class='col-sm-4'>
+                <a href='' class="disabled">
+                    <span class='glyphicon glyphicon-question-sign hugen'></span>
+                </a>
+                <p><span class="label label-default">coming soon!</span></p>
+                <h3>assignment 2</h3>
+            </div>
+            <div class='col-sm-4'>
+                <a href='' class="disabled">
+                    <span class='glyphicon glyphicon-question-sign hugen'></span>
+                </a>
+                <p><span class="label label-default">coming soon!</span></p>
+                <h3>assignment 3</h3>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-sm-4 col-sm-offset-4">
+                <a href='' class="disabled">
+                    <span class='glyphicon glyphicon-question-sign hugen'></span>
+                </a>
+                <p><span class="label label-default">coming soon!</span></p>
+                <h3>ecommerce site</h3>
             </div>
         </div>
     </div>
-    <footer>
-        <div class = 'container text-center'>
-            <p>created by josh nichols</p>
-        </div>
-    </footer>
-    <script src = 'assets/javascripts/index.js'></script>
+</div>
+<footer>
+    <div class='container text-center'>
+        <p>created by josh nichols</p>
+    </div>
+</footer>
+<script src='assets/javascripts/index.js'></script>
 </body>
 
 </html>

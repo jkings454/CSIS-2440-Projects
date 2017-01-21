@@ -147,6 +147,14 @@ a .hugen {
 }
 
 .bg-2 {
-    @include bg(#99dedd, 20px, 20px);
+    @include bg(#d0ddde, 20px, 20px);
     margin-bottom: 0;
+}
+
+.light-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.right-text {
+    text-align: right;
 }

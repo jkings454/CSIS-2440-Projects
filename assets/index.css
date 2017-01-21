@@ -130,7 +130,14 @@ a .hugen {
   border-radius: 100%; }
 
 .bg-2 {
-  background-color: #99dedd;
+  background-color: #d0ddde;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 0; }
+
+.light-padding {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.right-text {
+  text-align: right; }
