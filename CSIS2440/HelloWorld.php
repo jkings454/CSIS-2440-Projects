@@ -18,7 +18,7 @@
         Name: Joshua Nichols
         Age: 20
     -->
-    <a href = "/">Back to homepage.</a>
+    <a href="/ClassroomExercises.html">More Classroom Exercises...</a>
     <?php
         echo "<h1>Hello world</h1>";
         $greeting = "PHP is FUN!\n";

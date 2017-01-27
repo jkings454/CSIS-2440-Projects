@@ -61,6 +61,7 @@
             </div>
             <input type="submit" name="Submit" value="Submit" class="btn btn-primary"/>
         </form>
+        <a href="/ClassroomExercises.html">More Classroom Exercises...</a>
     </div>
 </div>
 </body>

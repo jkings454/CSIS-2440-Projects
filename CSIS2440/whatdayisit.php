@@ -89,6 +89,7 @@
       }
       echo "</select>";
       ?>
+      <a href="/ClassroomExercises.html">More Classroom Exercises...</a>
   </div>
   </body>
 </html>
