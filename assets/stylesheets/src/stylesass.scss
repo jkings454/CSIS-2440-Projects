@@ -21,7 +21,7 @@ body {
 }
 
 .big-box {
-  @include box(70%, 250px, (url('images/laptop.jpg') no-repeat center center));
+  @include box(70%, 250px, (url('../../images/laptop.jpg') no-repeat center center));
   color: #fff;
   margin: auto;
   padding: 20px 20px 20px 20px;
