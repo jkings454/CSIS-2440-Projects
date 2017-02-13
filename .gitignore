@@ -4,3 +4,5 @@ gulpfile.js
 assets/.sass-cache
 .idea
 favicon.ico
+/assets/images/favicon.png
+CSIS2440/secrets.json

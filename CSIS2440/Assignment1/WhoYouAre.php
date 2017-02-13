@@ -9,6 +9,7 @@ if (!isset($_POST["name"])) {
     die();
 }
 
+
 // Typical tyrannical programmer, deciding how users should express themselves.
 $name = ucwords(strtolower($_POST["name"]));
 $age = $_POST['age'];
@@ -29,6 +30,9 @@ $postPage = str_replace($newlines, "<br />", $postPage);
 <html>
 <head>
     <title>Who You Are</title>
+    <link rel="icon"
+          type="image/png"
+          href="/assets/images/favicon.png"/>
     <link rel='stylesheet' type='text/css'
           href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
