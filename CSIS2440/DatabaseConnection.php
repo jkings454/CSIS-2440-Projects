@@ -10,8 +10,8 @@ $host = "localhost";
 $dbname = "MonsterThing";
 $connection = mysqli_connect(
     $host,
-    $secrets["db_username"],
-    $secrets["db_pwd"],
+    $secrets->{"db_username"},
+    $secrets->{"db_pwd"},
     $dbname
 ) or die('Could not connect to the database server. ' . mysqli_connect_error());
 ?>
