@@ -6,3 +6,4 @@ assets/.sass-cache
 favicon.ico
 /assets/images/favicon.png
 CSIS2440/secrets.json
+CSIS2440/DatabaseConnection.php

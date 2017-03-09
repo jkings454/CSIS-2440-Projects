@@ -32,7 +32,7 @@ $newMob = array(
           $insert = <<<sql
 INSERT INTO `MonsterThing`.`Monsters` (`MonsterName`, `MonsterAC`, `HitDice`, `MonsterAttack`, `MonsterDamage`,
             `MonsterMove`, `MonsterTreasure`, `MonsterXP`, `Active`) VALUES ('$mob[0]', $mob[1], $mob[2], $mob[3],
-            '$mob[4]',$mob[5],'$mob[6]',$mob[7],'Y');
+            '$mob[4]',$mob[5],'$mob[6]',$mob[7],'Y');  
 sql;
           $success = $connection->query($insert);
           if ($success == FALSE) {
@@ -42,6 +42,7 @@ sql;
           } else {
               echo "$mob[0] was added <br />";
           }
+          //THERE HAS TO BE A BETTER WAY!
 
       }
       ?>
